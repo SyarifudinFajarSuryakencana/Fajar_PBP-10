@@ -1,0 +1,35 @@
+# Register a new user
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+
+# {
+#   "name": "ilham ahmad",
+#   "username": "ilham1",
+#   "password": "ilham123"
+# }
+
+# # # Login user and get authentication token
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "username": "ilham1",
+  "password": "ilham123"
+}
+
+# # # Get current user information
+# GET http://localhost:3000/api/users/current
+# Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
+
+# # Update current user information
+# PATCH http://localhost:3000/api/users/current
+# Content-Type: application/json
+# Authorization: Bearer c647fd83-c0e5-4a92-a15d-b21b108e53f6
+
+# {
+#   "name": "Updated John Doe"
+# }
+
+# Logout current user
+# DELETE http://localhost:3000/api/users/logout
+# Authorization: Bearer c647fd83-c0e5-4a92-a15d-b21b108e53f6

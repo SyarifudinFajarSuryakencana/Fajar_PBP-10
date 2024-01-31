@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:3000
+
+# Get all products
+GET {{baseUrl}}/api/products
+Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
+
+# Get product by ID
+# GET {{baseUrl}}/api/products/6
+# Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
+
+# Create a new product
+# POST {{baseUrl}}/api/products
+# Content-Type: application/json
+# Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
+
+
+# {
+#   "name": "siomay",
+#   "description": "siomay adalah makanan khas indonesia",
+#   "price": 10000,
+#   "stock": 10,
+#   "userId": 3
+# }
+
+# Update a product
+# PUT {{baseUrl}}/api/products/8
+# Content-Type: application/json
+# Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
+
+# {
+#   "name": "batagor",
+#   "description": "batagor lebih enak daripada siomay",
+#   "price": 20000,
+#   "stock": 10
+# }
+
+# # Delete a product
+# DELETE {{baseUrl}}/api/products/8
+# Authorization: Bearer 4819df98-1e99-4721-9825-654ecfc1e837
